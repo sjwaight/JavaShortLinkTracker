@@ -11,10 +11,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
   @Override
   protected void configure(HttpSecurity http) throws Exception {
      http.authorizeRequests()
-        .antMatchers("/create/**").authenticated()
+        .antMatchers("/sl/create/**").authenticated()
         .anyRequest().permitAll()
         .and()
-        .httpBasic()
+        .httpBasic().realmName("Create Shortlink API")
         .and().csrf().disable();
   }
 }
