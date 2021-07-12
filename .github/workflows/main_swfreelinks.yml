@@ -28,7 +28,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: java-app
-        path: '${{ github.workspace }}/linktrack/target/*.war'
+        path: '${{ github.workspace }}/linktrack/target/*.jar'
 
   deploy:
     runs-on: ubuntu-latest
@@ -50,4 +50,4 @@ jobs:
         app-name: 'swfreelinks'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_c1be0c70ca3d415b9ab0eb5184c12d44 }}
-        package: '*.war'
+        package: '*.jar'
