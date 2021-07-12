@@ -22,7 +22,7 @@ jobs:
         java-version: '11'
 
     - name: Copy placeholder properties file into right location 
-      run: mv linktrack/src/mainresources/application.properties.prod linktrack/src/mainresources/application.properties
+      run: mv linktrack/src/main/resources/application.properties.prod linktrack/src/main/resources/application.properties
 
     - name: Build with Maven
       run: mvn clean install -f linktrack/pom.xml
