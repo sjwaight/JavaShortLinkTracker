@@ -28,6 +28,8 @@ The API consists of three endpoints:
 - **Get Shortlik entry (GET)- /sl/{id}** - anonymouse endpoint that returns the full entry for a shortlink entry. You need to know the ID you are looking for (note: the ID isn't the target URL).
 - **Track Shortlink click (GET) - /sl/tk/{id}** - use this in your source web page to track the click and redirect the browser to the target site.
 
+You can test out these endpoints in your fully deployed solution by installing Thunderclient (https://www.thunderclient.io/) and importing the collection in VS Code that is [available in this repository](thunder-collection_Shortlinks%20Demo.json).
+
 ### References
 
 The following repos or sites informed to the building of this sample:
